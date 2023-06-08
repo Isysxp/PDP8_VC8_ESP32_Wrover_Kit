@@ -26,7 +26,7 @@ the color of the pixel to gradually decay to black. The code for this is in TFTD
 in 3 arrays. The decay array is initally filled with a number of RGB565 colors which decay exponentially from a start color
 to black. Each of the individual RGB colors may be decayed at different rates. In the current configuration, the initial
 color is white and the Blue component is set to rapidly decay which a constant of 0.6 while the Red and Green components
-decay slower with a constant of 0.9. The second (bitmap) array is a 320*240 unit8 array allocated in PSRAM. This array
+decay slower with a constant of 0.9. The second (bitmap) array is a 320*240 array allocated in PSRAM. This array
 is used to contains a set of indices into the decay array. When a given index is 0, the corresponding entry in the decay
 array is 0 and this is the default (black) state. Whne the index for the given pixel is set to 1, the fade function detects
 this an uses the dacy array value at index 1. After the pixel has been updated with the value from the decay array
