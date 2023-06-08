@@ -9,7 +9,7 @@ server listening on TCP/IP port 23 with a dns registered name esppdp8. The USB a
 that eithe interface may be used. The simulation also provides a VC8 point plot display which is visible via the 32x240
 LCD provided with the Wrover kit. Finally, the simulation contains an RK05 disk drive handler which is connected to
 a disk image name rk05.dsk which should be copied to an SD card and plugged into the card slot of the kit.
-
+<br>
 Hardware changes:
 
 1. R117 should be removed from the Wrover kit PC. This allows the SD card and the LCD display to be used together.
