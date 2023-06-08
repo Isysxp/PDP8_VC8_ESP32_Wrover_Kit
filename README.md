@@ -18,7 +18,8 @@ Hardware changes:
 <br>
 <br>
 Functional overview:
-
+<br>
+<br>
 The PDP8 simulation sofware will not be described here in detail as the primary purpose of this project is to
 test the viability of a CRT 'like' display on an LCD. The VC8 display is simply an XY display connected to 2x10 bit
 DACs giving a max resolution of 1024x1024. There is no hardware refresh such that the processor must maintain the
