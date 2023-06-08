@@ -46,5 +46,19 @@ phosphor setting matches the P7 used in the PDP1 Type 30 display. This decay pat
 the timer callback rate which is 100ms.
 <br>
 <br>
+Building the app:
+<br>
+<br>
+For simplicity, this is an Arduino app. I would note that the ESP-IDF build environment is an option but is very complex.
+A number of libraries are required. These may be determined from the include files.
+My library source list in the Arduino preferences is:
+<br>
+<br>
+https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
+https://espressif.github.io/arduino-esp32/package_esp32_index.json
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+<br>
+<br>
+
 Ian schofield June 2023
 
