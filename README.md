@@ -64,9 +64,9 @@ The rk05 disk image:
 <br>
 There is a substantial number of files on this disk which even hard bitten PDP8 programmers might not recognise.
 As a first try after the system boots to the monitor '.':
-Type EXE M<return>
+Type EXE M<return><br>
 If you want to be more adventurous:
-EXE CCR
+EXE CCR<br>
 at the > prompt, type in RDR.C<return>
 And, yes this is a PDP8 running OS/8 and there is a C compiler!
 Check https://tangentsoft.com/pidp8i/wiki?name=Home for more details.
