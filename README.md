@@ -15,7 +15,8 @@ Hardware changes:
 <br>
 <br>
 1. R117 should be removed from the Wrover kit PC. This allows the SD card and the LCD display to be used together.
-
+<br>
+<br>
 Functional overview:
 
 The PDP8 simulation sofware will not be described here in detail as the primary purpose of this project is to
