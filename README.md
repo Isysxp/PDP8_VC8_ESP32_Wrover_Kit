@@ -12,7 +12,7 @@ a disk image name rk05.dsk which should be copied to an SD card and plugged into
 <br>
 <br>
 Hardware changes:
-
+<br>
 1. R117 should be removed from the Wrover kit PC. This allows the SD card and the LCD display to be used together.
 
 Functional overview:
