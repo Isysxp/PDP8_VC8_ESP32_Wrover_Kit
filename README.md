@@ -68,7 +68,7 @@ Type EXE M<return><br>
 If you want to be more adventurous:
 EXE CCR<br>
 at the > prompt, type in RDR.C<return>
-And, yes this is a PDP8 running OS/8 and there is a C compiler!
+And, yes this is a PDP8 running OS/8 and there is a C compiler!<br>
 Check https://tangentsoft.com/pidp8i/wiki?name=Home for more details.
 <br>
 <br>
