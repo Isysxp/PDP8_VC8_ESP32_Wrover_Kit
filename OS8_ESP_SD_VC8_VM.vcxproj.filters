@@ -24,4 +24,10 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="board.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ESP32_WROVER_KIT.Release.debugger_launch.json" />
+  </ItemGroup>
 </Project>
