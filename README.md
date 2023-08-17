@@ -6,7 +6,7 @@ The system configuration is a PDP8 processor with an EAE and 32KW core. This inc
 which is interfaced to the default serial port of the ESP32 which is linked to a USB adapter and appears as a
 COM port on the host system running at 115200 baud. In addition, the KL8 is interfaces to a telnet compatible
 server listening on TCP/IP port 23 with a DNS registered name esppdp8. The USB and telnet channels run in parallel such
-that either interface may be used. The simulation also provides a VC8 point plot display which is visible via the 32x240
+that either interface may be used. The simulation also provides a VC8 point plot display which is visible via the 320x240
 LCD provided with the Wrover kit. Finally, the simulation contains an RK05 disk drive handler which is connected to
 a disk image named rk05.dsk which should be copied to an SD card and plugged into the card slot of the kit. This disk
 image is in the repo and is Simh compatible.
