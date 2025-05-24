@@ -45,7 +45,7 @@ void fade()
 void TFTsetup(void* pvParameters) {
 	uint16_t cmap;
 
-	esp_task_wdt_init(30, false);
+	//esp_task_wdt_init(30, false);
 	psramInit();
 	bmp = (uint16_t*)ps_malloc(320 * 240 * 2);
 	bitmap = (uint8_t*)ps_malloc(320 * 240);
@@ -63,18 +63,10 @@ void TFTsetup(void* pvParameters) {
 	}
 	/* Use 1st timer of 4 */
 	/* 1 tick take 1/(80MHZ/80) = 1us so we set divider 80 and count up */
-	timer = timerBegin(0, 80, true);
+  timer = timerBegin(1000000);
+  timerAttachInterrupt(timer, &TFTEvent);
+  timerAlarm(timer, 100000, true, 0);
 
-	/* Attach onTimer function to our timer */
-	timerAttachInterrupt(timer, &TFTEvent, true);
-
-	/* Set alarm to call onTimer function every second 1 tick is 1us
-	=> 1 second is 1000000us */
-	/* Repeat the alarm (third parameter) */
-	timerAlarmWrite(timer, 100000, true);
-
-	/* Start an alarm */
-	timerAlarmEnable(timer);
 	while (1) {
 		while (tflag)
 			yield();

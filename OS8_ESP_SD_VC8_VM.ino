@@ -1,3 +1,4 @@
+#include <stdint.h>
 #include <gfxfont.h>
 #include <Adafruit_SPITFT_Macros.h>
 #include <Adafruit_SPITFT.h>
@@ -437,8 +438,8 @@ void iot() {
 					case 051:	vcflg=0;break;
 					case 052:	if (vcflg>100) pc++;break;
 					case 053:	vcix=(acc&01777)^01000;vcflg=1;break;
-					case 054:	vciy=(acc&01777)^01000;vcflg=1;break;
-                    case 055:	ndx = (int)(vciy / 4+40) + (int)(vcix/4)*320; bitmap[ndx] = 1; vcflg = 1; break;
+					case 054:	vciy=02000-((acc&01777)^01000);vcflg=1;break;
+          case 055:	ndx = (int)(vcix / 4+40) + (int)(vciy/4)*320; bitmap[ndx] = 1; vcflg = 1; break;
 					case 056:	acc&=010000;break;
 					case 057:	acc=acc&010000;break;
 					}
