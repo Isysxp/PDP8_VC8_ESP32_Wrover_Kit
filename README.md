@@ -77,7 +77,7 @@ Ian schofield June 2023<br>
 This app has now been updated to follow updates in the Arduino environment:<br>
 Board: esp32 by Espressif systems V 3.1.1<br>
 Lib: LovyanGFX V 1.2.7<br>
-  NB Set INFRA_SSID and INFRA_PSWD to match your router.<br>
+  NB Set INFRA_SSID and INFRA_PSWD in ESP_Telnet.ino to match your router.<br>
 <br>
 Ian Schofield May 2025<br>
 
