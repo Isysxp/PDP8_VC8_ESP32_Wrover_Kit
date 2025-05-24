@@ -72,5 +72,13 @@ And, yes this is a PDP8 running OS/8 and there is a C compiler!<br>
 Check https://tangentsoft.com/pidp8i/wiki?name=Home for more details.
 <br>
 <br>
-Ian schofield June 2023
+Ian schofield June 2023<br>
+<br>
+This app has now been updated to follow updates in the Arduino environment:<br>
+Board: esp32 by Espressif systems V 3.1.1<br>
+Lib: LovyanGFX V 1.2.7<br>
+<br>
+Ian Schofield May 2025<br>
+
+
 
